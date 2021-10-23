@@ -506,21 +506,24 @@ footer p{
 /* ------------------------------------- */
 .content{
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color:#3A2922;
 }
-.content h2{
-   background-color:#EFEFEF;
-   color: #3A2922;
+.content img{
+    padding:0 100px;
+    width: 100%;
+}
+.prototitle{
+    color: #B19071;
     text-align: center;
     padding: 2%;
-    font-size: 32px;
+    font-size: 40px;
 }
 /* behance icon */
 .behance_box{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 16px 0;
+    margin: 40px 0 10px;
 }
 .behance_box h2{
     font-size: 20px;
