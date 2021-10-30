@@ -498,7 +498,7 @@ nav h1{
 }
 @media (max-width:540px){
     .skill_content{
-        height: 110vh;
+        height: 120vh;
     }
     .skill_cards{
         width: 80%;
@@ -535,7 +535,7 @@ nav h1{
 }
 @media (max-width:540px){
     .portfolio_box{
-        height: 120vh;
+        height: 130vh;
     }
     .portfolio h1{
         font-size: 48px;
@@ -638,7 +638,7 @@ nav h1{
         color: #B19071;
     }
     #tab-menu > .tab-inner{
-        height: 910px;
+        height: 960px;
     }
     .tab-inner{ 
         flex-direction: column;
