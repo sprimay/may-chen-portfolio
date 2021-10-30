@@ -535,7 +535,7 @@ nav h1{
 }
 @media (max-width:540px){
     .portfolio_box{
-        height: 130vh;
+        height: 150vh;
     }
     .portfolio h1{
         font-size: 48px;
