@@ -740,9 +740,16 @@ nav h1{
         height: 362px;
     }
     .contact_info ul{
+        right: 20px;
+        bottom: 20px;
         font-size: 14px;
         line-height: 1.5rem;
         letter-spacing: 6%;
+    }
+    .info_title{
+        font-size: 0.8rem;
+        line-height: 1rem;
+        padding: 0px 28px 0px 28px;
     }
 }
 /* ---------------footer--------------- */
