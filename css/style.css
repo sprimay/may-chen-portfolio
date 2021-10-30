@@ -483,6 +483,11 @@ nav h1{
     display: none;
     opacity: 0;
 }
+@media(max-width:992px){
+    .cards figcaption{
+        display: none;
+    }
+}
 @media (max-width:768px){
     .skill{
         padding-top: 60px;
