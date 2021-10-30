@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>May Chen Portfolio</title>
     <link rel="icon" href="mayChen.ico">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- 自定義 -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +15,13 @@
         <div class="container">
             <nav>
                 <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
-                <ul class="menu">
+                <a href="#popup" class="burger">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <ul id="popup" class="menu navbar-overly">
+                    <a href="#" class="btn-close">
+                        <i class="fas fa-times"></i>
+                    </a>
                     <li><a href="#about_me">About me</a></li>
                     <li><a href="#skill">Skill</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -54,7 +62,7 @@
                     <ul class="my_info">
                         <li>陳曉玫 <span class="english_name">May Chen</span></li>
                         <li>1995 -</li>
-                        <li><span class="english_name">UI/UX</span>｜網頁設計｜平面設計 ｜活動場佈設計</li>
+                        <li><span class="english_name">UI/UX</span>｜網頁設計｜平面設計 ｜活動展場設計</li>
                     </ul>
                     <h2>學經歷 <span class="english_title">Education & Work Experience</span></h2>
                     <hr>
@@ -72,7 +80,7 @@
                             <img src="images/icon_work.png" alt="work icon" class="icon">
                             <ul>
                                 <li class="name">臻星霳有限公司<span class="english_name">ATOZ Group</span></li>
-                                <li class="department">設計專員 (2017/10 - 2021/4)</li>
+                                <li class="department">展場設計專員 (2017/10 - 2021/4)</li>
                             </ul>
                         </div>
                     </div>
@@ -202,7 +210,7 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <p>copyright©2021 May Chen All rights reserved.</p>
+        <small>copyright &copy; 2021 May Chen All rights reserved.</small>
     </footer>
     <!-- JavaScript -->
     <script src="js/jquery-3.6.0.min.js"></script>

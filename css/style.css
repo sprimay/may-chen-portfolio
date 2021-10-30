@@ -4,12 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* position: relative; */
 }
 body{
     font-family: 'Cormorant Garamond', serif;
     background-color: #DBD4CE;
-    /* overflow: hidden; */
 }
 .container{
     width: 1000px;
@@ -24,6 +22,21 @@ ul{
 }
 a{
     text-decoration: none;
+}
+@media (max-width:992px){
+    .container{
+        width: 85%;
+    }
+}
+@media (max-width:768px){
+    .container{
+        width: 90%;
+    }
+}
+@media (max-width:540px){
+    .container{
+        width: 90%;
+    }
 }
 /*--------------next button-------------*/
 /* ------------------------------------ */
@@ -66,6 +79,11 @@ a{
 .contact_home{
     width: 45%;
 }
+@media(max-width:540px){
+    .next_btn,.home_btn{
+        display: none;
+    }
+}
 /* ----------------header-------------- */
 /* ------------------------------------ */
 .index_header{
@@ -86,6 +104,16 @@ nav{
 nav h1{
     width: 120px;
 }
+.burger{
+    display: none;
+    color: #3A2922;
+    font-size: 24px;
+}
+.btn-close{
+    display: none;
+    color: #3A2922;
+    font-size: 24px;
+}
 .menu{
     display: flex;
 }
@@ -103,6 +131,45 @@ nav h1{
     background-color: #3A2922;
     color: #DBD4CE;
     border-radius: 4px;
+}
+@media(max-width:992px){
+    .menu li{
+        font-size: 1rem;
+    }
+}
+@media (max-width:768px){
+    .burger{
+        display: block;
+    }
+    .navbar-overly{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #B19071;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        padding-top: 120px;
+    }
+    #popup:target{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    .btn-close{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .menu li{
+        text-align: center;
+        line-height: 2.5rem;
+        padding-bottom: 40px;
+    }
 }
 /* ------banner------ */
 .banner_box{
@@ -159,6 +226,36 @@ nav h1{
         transform: translateY(0);
     }
 }
+@media (max-width:992px){
+    .banner_inner{
+        height: 500px;
+    }
+    .banner_inner h2{
+        font-size: 56px;
+        text-align: center;
+    }
+    .banner_inner h3{
+        font-size: 24px;
+    }
+}
+@media (max-width:768px){
+    .banner_inner{
+        height: 400px;
+    }
+    .banner_inner h2{
+        font-size: 48px;
+        text-align: center;
+    }
+}
+@media (max-width:540px){
+    .banner_inner h2{
+        font-size: 32px;
+        text-align: center;
+    }
+    .banner_inner h3{
+        font-size: 16px;
+    }
+}
 /* ------------about profile------------ */
 /* ------------------------------------- */
 /* picture */
@@ -189,6 +286,45 @@ nav h1{
     line-height: 50px;
     transform: translate(260px,-280px)rotate(90deg);
     color: #B19071;
+}
+@media (max-width:992px){
+    .my_picture{
+        width: 400px;
+    }
+    .about h1{
+        font-size: 56px;
+        line-height: 50px;
+        transform: translate(218px,-240px)rotate(90deg);
+    }
+}
+@media (max-width:768px){
+    .about{
+        height: 120vh;
+    }
+    .profile_box{
+        flex-direction: column;
+        padding-top: 150px;
+    }
+    .about h1{
+        line-height: 50px;
+        transform: translate(30px,-575px)rotate(0deg);
+        color: #B19071;
+    }
+}
+@media (max-width:540px){
+    .about{
+        height: 135vh;
+    }
+    .profile_box{
+        padding-top: 80px;
+    }
+    .my_picture{
+        width: 350px;
+    }
+    .about h1{
+        font-size: 48px;
+        transform: translate(50px,-422px)rotate(0deg);
+    }
 }
 /* profile */
 .profile{
@@ -258,6 +394,30 @@ nav h1{
     font-size: 14px;
     margin-bottom: 4px;
 }
+@media (max-width:992px){
+    .profile h2{
+        font-size: 24px;
+    }
+    .english_title{
+        font-size: 18px;
+    }
+    .my_info li{
+        font-size: 16px;
+    }
+}
+@media (max-width:768px){
+    .profile{
+    padding: 0px 0px 50px 0px;
+}
+}
+@media (max-width:540px){
+    .profile h2{
+        font-size: 24px;
+    }
+    .my_info li{
+        font-size: 16px;
+    }
+}
 /* -------------about skill------------ */
 /* ------------------------------------ */
 .skill{
@@ -323,6 +483,27 @@ nav h1{
     display: none;
     opacity: 0;
 }
+@media (max-width:768px){
+    .skill{
+        padding-top: 60px;
+    }
+    .skill_cards{
+        flex-direction: column;
+        width: 40%;
+        padding: 20px;
+    }
+    .cards{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:540px){
+    .skill_content{
+        height: 110vh;
+    }
+    .skill_cards{
+        width: 80%;
+    }
+}
 /* -------------portfolio------------ */
 /* ------------------------------------ */
 .portfolio{
@@ -346,6 +527,20 @@ nav h1{
     padding: 0;
     line-height: 48px;
     color: #B19071;
+}
+@media (max-width:992px){
+    .portfolio_box{
+        height: 125vh;
+    }
+}
+@media (max-width:540px){
+    .portfolio_box{
+        height: 120vh;
+    }
+    .portfolio h1{
+        font-size: 48px;
+        transform: translateY(10px);
+    }
 }
 /* tab menu */
 #tab-menu{
@@ -406,7 +601,56 @@ nav h1{
     border-radius: 8px;
     box-shadow: 2px 2px 8px rgba(58, 41, 34, 0.25);
 }
-/* phone */
+@media (max-width:992px){
+    #tab-menu > .tab-inner{
+        height: 840px;
+    }
+    .tab-inner{ 
+        align-items: stretch;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .collection{
+        width: 50%;
+        padding: 8px;
+    }
+}
+@media (max-width:768px){
+    #tab-menu > .tab-inner{
+        height: 720px;
+    }
+    .tab-inner{ 
+        align-items: stretch;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .collection{
+        width: 50%;
+        padding: 8px;
+    }
+}
+@media (max-width:540px){
+    #tab-menu > ul > li{
+        height: 40px; 
+        font-size: 16px;
+        padding:8px 10px;
+        border-radius: 4px 4px 0 0;
+        color: #B19071;
+    }
+    #tab-menu > .tab-inner{
+        height: 910px;
+    }
+    .tab-inner{ 
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .collection{
+        width: 95%;
+        padding: 8px;
+    }
+}
 /* -------------contact------------ */
 /* ------------------------------------ */
 .contact{
@@ -462,6 +706,45 @@ nav h1{
     border-radius: 4px;
     box-shadow: 2px 2px 4px rgba(58, 41, 34, 0.25);
 }
+@media (max-width:992px){
+    .contact_info{
+        width: 600px;
+        height: 642px;
+    }
+    .contact_info ul{
+        font-size: 24px;
+        line-height: 2.4rem;
+        right: 60px;
+        bottom: 60px;
+    }
+    .info_title{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding: 0px 28px 0px 28px;
+    }
+}
+@media (max-width:768px){
+    .contact_info{
+        width: 480px;
+        height: 514px;
+    }
+    .contact_info ul{
+        right: 40px;
+        bottom: 40px;
+        line-height: 2rem;
+    }
+}
+@media (max-width:540px){
+    .contact_info{
+        width: 340px;
+        height: 362px;
+    }
+    .contact_info ul{
+        font-size: 14px;
+        line-height: 1.5rem;
+        letter-spacing: 6%;
+    }
+}
 /* ---------------footer--------------- */
 /* ------------------------------------- */
 footer{
@@ -490,12 +773,25 @@ footer{
     background-color: #DBD4CE;
     color: #3A2922;
 }
-footer p{
+footer small{
+    display: block;
     color:#DBD4CE;
     font-size: 1rem;
     font-weight: 300;
     text-align: center;
     padding: 16px 0 48px;
+}
+@media (max-width:540px){
+    .footer_logo img{
+        width: 35%;
+        padding: 24px 0 8px;
+    }
+    .footer_menu{
+        display: none;
+    }
+    footer small{
+        padding: 16px 0 32px;
+    }
 }
 /* ---------------collection--------------- */
 /* ------------------------------------- */
@@ -504,6 +800,9 @@ footer p{
 }
 /* ------------collection main------------ */
 /* ------------------------------------- */
+.portfolio-inner{
+    min-height: 80vh;
+}
 .content{
     height: 100%;
     background-color:#3A2922;
@@ -517,6 +816,17 @@ footer p{
     text-align: center;
     padding: 2%;
     font-size: 40px;
+}
+@media (max-width:992px){
+    .content img{
+        padding:0;
+    }
+    .prototitle{
+        display: none;
+    }
+    iframe{
+        display: none;
+    }
 }
 /* behance icon */
 .behance_box{
@@ -560,4 +870,14 @@ footer p{
     background-color: #B19071;
     color: #3A2922;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+@media (max-width:768px){
+    .back_to_portfolio{
+        width: 30%;
+    }
+}
+@media (max-width:540px){
+    .back_to_portfolio{
+        width: 50%;
+    }
 }

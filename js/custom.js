@@ -17,6 +17,6 @@ $(function () {
     });
     //smoove
     $('.offset').smoove({
-        offset:'30%'
+        offset:'15%'
     });
 });
