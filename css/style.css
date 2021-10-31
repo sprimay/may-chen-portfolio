@@ -289,12 +289,12 @@ nav h1{
 }
 @media (max-width:992px){
     .my_picture{
-        width: 400px;
+        width: 350px;
     }
     .about h1{
         font-size: 56px;
         line-height: 50px;
-        transform: translate(218px,-240px)rotate(90deg);
+        transform: translate(30px,-425px)rotate(0deg);
     }
 }
 @media (max-width:768px){
@@ -395,11 +395,14 @@ nav h1{
     margin-bottom: 4px;
 }
 @media (max-width:992px){
+    .profile{
+        padding: 0px 0px 50px 30px;
+    }
     .profile h2{
         font-size: 24px;
     }
     .english_title{
-        font-size: 18px;
+        font-size: 16px;
     }
     .my_info li{
         font-size: 16px;
@@ -487,11 +490,6 @@ nav h1{
     .cards figcaption{
         display: none;
     }
-}
-@media (max-width:768px){
-    .skill{
-        padding-top: 60px;
-    }
     .skill_cards{
         flex-direction: column;
         width: 40%;
@@ -499,6 +497,11 @@ nav h1{
     }
     .cards{
         margin-bottom: 20px;
+    }
+}
+@media (max-width:768px){
+    .skill{
+        padding-top: 60px;
     }
 }
 @media (max-width:540px){
@@ -608,7 +611,7 @@ nav h1{
 }
 @media (max-width:992px){
     #tab-menu > .tab-inner{
-        height: 840px;
+        height: 850px;
     }
     .tab-inner{ 
         align-items: stretch;
@@ -618,6 +621,11 @@ nav h1{
     .collection{
         width: 50%;
         padding: 8px;
+    }
+}
+@media (max-width:835px){
+    #tab-menu > .tab-inner{
+        height: 720px;
     }
 }
 @media (max-width:768px){
@@ -637,8 +645,8 @@ nav h1{
 @media (max-width:540px){
     #tab-menu > ul > li{
         height: 40px; 
-        font-size: 16px;
-        padding:8px 10px;
+        font-size: 18px;
+        padding:10px 10px;
         border-radius: 4px 4px 0 0;
         color: #B19071;
     }
