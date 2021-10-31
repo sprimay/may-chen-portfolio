@@ -891,6 +891,11 @@ footer small{
     color: #3A2922;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
 }
+@media (max-width:992px){
+    .back_to_portfolio{
+        width: 32%;
+    }
+}
 @media (max-width:768px){
     .back_to_portfolio{
         width: 30%;
