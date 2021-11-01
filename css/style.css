@@ -5,6 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
 body{
     font-family: 'Cormorant Garamond', serif;
     background-color: #DBD4CE;
