@@ -201,6 +201,7 @@ nav h1{
     color: #3A2922;
     letter-spacing: 0.06em;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     animation: moveUp 1.2s ease-in-out both;
 }
 .banner_inner h3{
@@ -208,12 +209,34 @@ nav h1{
     font-size: 20px;
     font-weight: 400;
     line-height: 150%;
-    margin-top:2rem;
+    margin-top:5px;
     color: #3A2922;
     letter-spacing: 0.06em;
     text-align: center;
-    animation: moveUp 1.2s 0.5s ease-in-out backwards;
+    white-space: nowrap;
+    border-right: 1.5px solid;
+    visibility: hidden;
 }
+  .typing-1{
+    overflow: hidden;
+    width: 6ch;
+    animation: hidden 1s .8s forwards,typing 2s steps(22), blink .5s  step-end infinite alternate;
+  }
+  .typing-2{
+    overflow: hidden;
+    width: 4.5ch;
+    animation: hidden 1s 1.8s forwards,typing 2s 1s steps(22), blink .5s step-end infinite alternate;
+    }
+  .typing-3{
+    overflow: hidden;
+    width: 7ch;
+    animation: hidden 1s 3s forwards,typing 2s 3s steps(22), blink .5s step-end infinite alternate;
+  }
+  .typing-4{
+    overflow: hidden;
+    width: 12ch;
+    animation: hidden 1s 5s forwards,typing 2s 5s steps(22), blink .5s step-end infinite alternate;
+  }
 @keyframes moveUp{
     0%{
         transform: translateY(30px);
@@ -229,6 +252,21 @@ nav h1{
         transform: translateY(0);
     }
 }
+@keyframes hidden{
+    100%{
+        visibility: visible;
+    }
+} 
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }   
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
 @media (max-width:992px){
     .banner_inner{
         height: 500px;
