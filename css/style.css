@@ -228,7 +228,7 @@ nav h1{
   }
   .typing-2{
     overflow: hidden;
-    width: 5ch;
+    width: 5.5ch;
     animation: hidden 1s 1.8s forwards,typing 2s 1s steps(22), blink .5s step-end infinite alternate;
     }
   .typing-3{
@@ -238,7 +238,7 @@ nav h1{
   }
   .typing-4{
     overflow: hidden;
-    width: 14ch;
+    width: 15ch;
     animation: hidden 1s 5s forwards,typing 2s 5s steps(22), blink .5s step-end infinite alternate;
   }
 @keyframes moveUp{
