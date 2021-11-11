@@ -223,22 +223,22 @@ nav h1{
 }
   .typing-1{
     overflow: hidden;
-    width: 6ch;
+    width: 7ch;
     animation: hidden 1s .8s forwards,typing 2s steps(22), blink .5s  step-end infinite alternate;
   }
   .typing-2{
     overflow: hidden;
-    width: 4.5ch;
+    width: 5ch;
     animation: hidden 1s 1.8s forwards,typing 2s 1s steps(22), blink .5s step-end infinite alternate;
     }
   .typing-3{
     overflow: hidden;
-    width: 7ch;
+    width: 8ch;
     animation: hidden 1s 3s forwards,typing 2s 3s steps(22), blink .5s step-end infinite alternate;
   }
   .typing-4{
     overflow: hidden;
-    width: 12ch;
+    width: 14ch;
     animation: hidden 1s 5s forwards,typing 2s 5s steps(22), blink .5s step-end infinite alternate;
   }
 @keyframes moveUp{
