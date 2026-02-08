@@ -968,17 +968,19 @@ footer small{
     text-shadow: 0 0 10px rgb(82, 82, 82);
 }
 .video-container{
-    position: relative;
-    width: 50%; /* 或你指定的寬度 */
-    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
+.video-container img{
+    width: 40%;
+    height: auto;
+    padding: 0 10% 0 10%;
 }
 .astroVideo{
-  position: absolute;
-  top: 2rem;        /* 距離頂部多少像素 */
-  left: 50%;        /* 距離左側多少像素 */
-  width: 25rem;      /* 設定影片寬度 */
-  z-index: 10;       /* 確保影片層級在圖片上方 */
-  border-radius: 8px; /* 選配：圓角看起來更現代 */
+    height: 800px;
+    padding-left: 30px;
 }
 .banner_gif{
     background-color: #ebeae7;
@@ -1023,18 +1025,28 @@ footer small{
     .back_to_portfolio{
         width: 30%;
     }
+    .video-container{
+        flex-direction: column-reverse;
+        width:100%;
+        height: 1200px;
+    }
+    .video-container img{
+        width: 50%;
+        margin-bottom: 50px;
+    }
      .astroVideo{
-        left: 40%;
-        width: 12rem;
+        width: 100%;
     }
 }
 @media (max-width:540px){
     .back_to_portfolio{
         width: 50%;
     }
+    .video-container img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
     .astroVideo{
-        top:1rem;
-        left: 40%;
-        width: 7rem;
+        width: 100%;
     }
 }
