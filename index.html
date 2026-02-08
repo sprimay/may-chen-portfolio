@@ -32,8 +32,8 @@
                         <i class="fas fa-times"></i>
                     </a>
                     <li><a href="#about_me">About me</a></li>
-                    <li><a href="#skill">Skill</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Service"></a>Service</li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -41,10 +41,8 @@
         <div class="container banner_box">
             <div class="banner_inner">
                 <h2>Welcome to my Portfolio!</h2>
-                <h3 class="typing-1">UI UX</h3>
-                <h3 class="typing-2">WEB</h3>
-                <h3 class="typing-3">Display</h3>
-                <h3 class="typing-4">Visual Design</h3>
+                <h3 class="typing-1">Brand Event</h3>
+                <h3 class="typing-3">Visual Design</h3>
             </div>
             <a href="#about_me" class="next_btn">
                 <div>
@@ -69,8 +67,7 @@
                     <hr>
                     <ul class="my_info">
                         <li>陳曉玫 <span class="english_name">May Chen</span></li>
-                        <li>1995 -</li>
-                        <li><span class="english_name">UI/UX</span>｜網頁設計｜平面設計 ｜活動展場設計</li>
+                        <li>品牌活動 | 平面設計 </li>
                     </ul>
                     <h2>學經歷 <span class="english_title">Education & Work Experience</span></h2>
                     <hr>
@@ -89,44 +86,20 @@
                             <ul>
                                 <li class="name">臻星霳有限公司<span class="english_name">ATOZ Group</span></li>
                                 <li class="department">展場設計專員 (2017/10 - 2021/4)</li>
+                                <li class="name">合邦商網<span class="english_name">HOHO</span></li>
+                                <li class="department">商品編輯專員 (2022/3 - 2023/7)</li>
+                                <li class="department">視覺設計師 (2023/7 - 2023/11)</li>
+                                <li class="name">接案設計<span class="english_name">SOHO(2023-)</span></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <a href="#skill" class="next_btn">
+                <a href="#portfolio" class="next_btn">
                     <div>
                         <img src="images/nextBg.png" alt="btn_bg" class="btn_bg">
-                        <img class="skill_btn" src="images/next_skill.png" alt="nav to skill">
+                        <img class="portfolio_btn" src="images/next_portfolio.png" alt="nav to portfolio">
                     </div>
                 </a>
-            </div>
-        </section>
-        <!-- skill -->
-        <section id="skill" class="skill">
-            <h1>Skill</h1>
-            <div class="skill_content">
-                <div class="container skill_box">
-                    <div class="skill_cards">
-                        <figure class="cards offset" data-rotate-y="90deg">
-                            <img src="images/Skill_adobeCard.png" alt="adobe skill">
-                            <figcaption>Adobe</figcaption>
-                        </figure>
-                        <figure class="cards offset" data-rotate-y="90deg">
-                            <img src="images/Skill_webCard.png" alt="web & UI skill">
-                            <figcaption>Web&UI</figcaption>
-                        </figure>
-                        <figure class="cards offset" data-rotate-y="90deg">
-                            <img src="images/Skill_IdCard.png" alt="Interior design skill">
-                            <figcaption>Interior design</figcaption>
-                        </figure>
-                    </div>
-                    <a href="#portfolio" class="next_btn">
-                        <div>
-                            <img src="images/nextBg.png" alt="btn_bg" class="btn_bg">
-                            <img class="portfolio_btn" src="images/next_portfolio.png" alt="nav to portfolio">
-                        </div>
-                    </a>
-                </div>
             </div>
         </section>
         <!-- portfolio -->
@@ -136,10 +109,48 @@
                     <h1>Portfolio</h1>
                     <div id="tab-menu" class="tab_manu">
                         <ul class="tab-title">
-                            <li><a href="#tab01">UI/UX</a></li>
-                            <li><a href="#tab02">Display</a></li>
+                            <li><a href="#tab01">展場設計Dispay</a></li>
+                            <li><a href="#tab02">其他分類 Others</a></li>
+                              <!-- *有新增再開啟
+                            <li><a href="#tab03">3D場景渲染</a></li>
+                              -->
                         </ul>
                         <div id="tab01"  class="tab-inner">
+                            <div class="collection">
+                                <a href="banquet.html">
+                                    <img src="images/coverBQ.jpg" alt="Banquet">
+                                </a>
+                            </div>
+                            <div class="collection">
+                                <a href="brand_event.html">
+                                    <img src="images/coverBE.jpg" alt="Brand Event">
+                                </a>
+                            </div>
+                            <div class="collection">
+                                <a href="popup_store.html">
+                                    <img src="images/coverPOP.jpg" alt="POPUP & Other">
+                                </a>
+                            </div>
+                        </div>
+                        <div id="tab02"  class="tab-inner">
+                            <div class="collection">
+                                <a href="3D_inside.html">
+                                    <img src="images/cover3D1.jpg" alt="3D場景渲染">
+                                </a>
+                            </div>
+                            <div class="collection">
+                                <a href="visual.html">
+                                    <img src="images/coverBanner.jpg" alt="平面設計">
+                                </a>
+                            </div>
+                            <div class="collection">
+                                <a href="3dcreation.html">
+                                    <img src="images/cover3DPeo.jpg" alt="3D創作">
+                                </a>
+                            </div>
+                        </div> 
+                         <!-- **有新增再開啟 **
+                        <div id="tab03"  class="tab-inner">
                             <div class="collection">
                                 <a href="dailyUI.html">
                                     <img src="images/collection_dailyUi.jpg" alt="daily UI">
@@ -155,32 +166,63 @@
                                     <img src="images/collection_clock.jpg" alt="reDesign02">
                                 </a>
                             </div>
-                        </div>
-                        <div id="tab02"  class="tab-inner">
-                            <div class="collection">
-                                <a href="banquet.html">
-                                    <img src="images/collection_banquet.jpg" alt="Banquet">
-                                </a>
-                            </div>
-                            <div class="collection">
-                                <a href="brand_activity.html">
-                                    <img src="images/collection_brand.jpg" alt="Banquet">
-                                </a>
-                            </div>
-                            <div class="collection">
-                                <a href="other.html">
-                                    <img src="images/collection_other.jpg" alt="Banquet">
-                                </a>
-                            </div>
-                        </div>
+                        </div> 
+                          -->
                     </div>
                 </div>
-                <a href="#contact" class="next_btn">
+                <a href="#service" class="next_btn">
                     <div>
                         <img src="images/nextBg.png" alt="btn_bg" class="btn_bg">
-                        <img class="contact_btn" src="images/next_contact.png" alt="nav to contact">
+                        <img class="service_btn" src="images/next_service.png" alt="nav to contact">
                     </div>
                 </a>
+            </div>
+        </section>
+        <!-- Service -->
+        <section id="service" class="skill">
+            <h1>Service</h1>
+            <div class="skill_content">
+                <div class="container skill_box">
+                    <div class="skill_cards">
+                        <figure class="cards offset">
+                            <img src="images/Skill_empty.png" alt=".">
+                            <div class="cards_infowords">
+                                <h3>品牌活動</h3>
+                                <ul>
+                                    <li>動線規劃</li>
+                                    <li>製作物設計</li>
+                                    <li>3D場景渲染</li>
+                                 </ul>
+                            </div>
+                        </figure>
+                        <figure class="cards offset">
+                            <img src="images/Skill_empty.png" alt=".">
+                            <div class="cards_infowords">
+                                <h3>平面設計</h3>
+                                <ul>
+                                    <li>網頁Banner</li>
+                                    <li>文宣類設計</li>
+                                    <li>影像修圖</li>
+                                 </ul>
+                            </div>
+                        </figure>
+                        <figure class="cards offset">
+                            <img src="images/Skill_empty.png" alt=".">
+                            <div class="cards_infowords">
+                                <h3>其他服務</h3>
+                                <ul>
+                                    <li>歡迎詢問討論</li>
+                                 </ul>
+                            </div>
+                        </figure>
+                    </div>
+                    <a href="#contact" class="next_btn">
+                        <div>
+                            <img src="images/nextBg.png" alt="btn_bg" class="btn_bg">
+                            <img class="contact_btn" src="images/next_contact.png" alt="nav to contact">
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
         <!-- contact -->
@@ -188,12 +230,10 @@
             <div class="container contact_box">
                 <div class="contact_info offset" data-scale="0.8">
                     <ul>
-                        <li class="info_title">Mail</li>
+                        <li class="info_title">E-Mail</li>
                         <li>spri0418@gmail.com</li>
                         <li class="info_title">Phone</li>
                         <li>0929936000</li>
-                        <li class="info_title">Behance</li>
-                        <li><a href="https://www.behance.net/st90002511c2ca" target="_blank"><img src="images/icon_behance.png" alt="behance icon"></a></li>
                     </ul>
                 </div>
                 <a href="#" class="home_btn">
@@ -214,8 +254,8 @@
         <ul class="footer_menu">
             <li ><a href="index.html">Home</a></li>
             <li><a href="#about_me">About me</a></li>
-            <li><a href="#skill">Skill</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#service">Service</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <small>copyright &copy; 2021 May Chen All rights reserved.</small>
