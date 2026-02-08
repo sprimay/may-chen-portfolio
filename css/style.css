@@ -698,31 +698,10 @@ nav h1{
     text-align: center;
     line-height: 25px;
 }
-.Bcards_infowords h3{
-    font-size: 2rem;
-    color: #ffffff;
-    margin: 18rem 0 0 0;
-    text-shadow: 0 0 10px rgb(82, 82, 82);
-}
-.video-container{
-    position: relative;
-    width: 50%; /* 或你指定的寬度 */
-    max-width: 800px;
-}
-.astroVideo{
-  position: absolute;
-  top: 2rem;        /* 距離頂部多少像素 */
-  left: 30%;        /* 距離左側多少像素 */
-  width: 25rem;      /* 設定影片寬度 */
-  z-index: 10;       /* 確保影片層級在圖片上方 */
-  border-radius: 8px; /* 選配：圓角看起來更現代 */
-}
-.banner_gif{
-    background-color: #ebeae7;
-}
-.banner_gif img{
-    width: 50%;
-    margin: 0 auto;
+.cards_infowords h3{
+    font-size: 1.75rem;
+    color: #3A2922;
+    padding-bottom: 10px;
 }
 @media(max-width:1024px){
     .cards figcaption{
@@ -736,19 +715,14 @@ nav h1{
     .cards{
         margin-bottom: 20px;
     }
-    .astroVideo{
-        left: 35%;
-        width: 18rem;
-    }
 }
 @media (max-width:768px){
     .skill{
         padding-top: 60px;
     }
-     .astroVideo{
-        left: 40%;
-        width: 12rem;
-    }
+    .cards_infowords h3{
+    font-size: 1.2rem;
+}
 }
 @media (max-width:540px){
     .skill_content{
@@ -757,11 +731,6 @@ nav h1{
     .skill_cards{
         flex-direction: column;
         width: 80%;
-    }
-     .astroVideo{
-        top:1rem;
-        left: 40%;
-        width: 7rem;
     }
 }
 /* -------------contact------------ */
@@ -989,13 +958,34 @@ footer small{
     text-align: center;
     line-height: 25px;
 }
-.cards_infowords h3{
-    font-size: 1.75rem;
-    color: #3A2922;
-    padding-bottom: 10px;
-}
 .bCover img{
     object-fit: cover;
+}
+.Bcards_infowords h3{
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 18rem 0 0 0;
+    text-shadow: 0 0 10px rgb(82, 82, 82);
+}
+.video-container{
+    position: relative;
+    width: 50%; /* 或你指定的寬度 */
+    max-width: 800px;
+}
+.astroVideo{
+  position: absolute;
+  top: 2rem;        /* 距離頂部多少像素 */
+  left: 30%;        /* 距離左側多少像素 */
+  width: 25rem;      /* 設定影片寬度 */
+  z-index: 10;       /* 確保影片層級在圖片上方 */
+  border-radius: 8px; /* 選配：圓角看起來更現代 */
+}
+.banner_gif{
+    background-color: #ebeae7;
+}
+.banner_gif img{
+    width: 50%;
+    margin: 0 auto;
 }
 /* back */
 .back_to_portfolio{
@@ -1020,18 +1010,31 @@ footer small{
     color: #3A2922;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
 }
-@media (max-width:992px){
+@media (max-width:1024px){
     .back_to_portfolio{
         width: 24%;
+    }
+    .astroVideo{
+        left: 35%;
+        width: 18rem;
     }
 }
 @media (max-width:768px){
     .back_to_portfolio{
         width: 30%;
     }
+     .astroVideo{
+        left: 40%;
+        width: 12rem;
+    }
 }
 @media (max-width:540px){
     .back_to_portfolio{
         width: 50%;
+    }
+    .astroVideo{
+        top:1rem;
+        left: 40%;
+        width: 7rem;
     }
 }
