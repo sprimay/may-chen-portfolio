@@ -509,7 +509,7 @@ nav h1{
     }
     .portfolio h1{
         font-size: 40px;
-        transform: translateY(10px);
+        transform: translateY(-50px);
     }
 }
 /* tab menu */
