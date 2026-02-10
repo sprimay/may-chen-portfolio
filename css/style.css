@@ -505,7 +505,7 @@ nav h1{
 }
 @media (max-width:540px){
     .portfolio_box{
-        height: 180vh;
+        height: 250vh;
     }
     .portfolio h1{
         font-size: 40px;
@@ -614,7 +614,7 @@ nav h1{
         color: #B19071;
     }
     #tab-menu > .tab-inner{
-        height: 1040px;
+        height: 1350px;
     }
     .tab-inner{ 
         flex-direction: column;
@@ -726,7 +726,7 @@ nav h1{
 }
 @media (max-width:540px){
     .skill_content{
-        height: 150vh;
+        height: 200vh;
     }
     .skill_cards{
         flex-direction: column;
@@ -950,9 +950,9 @@ footer small{
 }
 .Bcards_infowords{
     position: absolute;
-    top: 50%;
+    bottom: 10%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,0);
     pointer-events: none;
     font-family: 'Noto Sans TC','Lora', sans-serif;
     text-align: center;
@@ -964,7 +964,6 @@ footer small{
 .Bcards_infowords h3{
     font-size: 2rem;
     color: #ffffff;
-    margin: 18rem 0 0 0;
     text-shadow: 0 0 10px rgb(82, 82, 82);
 }
 .video-container{
@@ -1037,6 +1036,9 @@ footer small{
      .astroVideo{
         width: 100%;
     }
+    .Bcards_infowords h3{
+    font-size: 1rem;
+    }
 }
 @media (max-width:540px){
     .back_to_portfolio{
@@ -1048,5 +1050,14 @@ footer small{
     }
     .astroVideo{
         width: 100%;
+    }
+    .brand_cards{
+       flex-direction: column; 
+    }
+    .Bcards{
+        margin-bottom: 10%;
+    }
+    .Bcards_infowords h3{
+    font-size: 2rem;
     }
 }
