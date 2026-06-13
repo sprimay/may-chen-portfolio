@@ -124,7 +124,7 @@ nav h1{
 .menu li{
     position: relative;
     margin:0 16px;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-family: 'Cormorant Garamond', 'Noto Sans TC', sans-serif;
 }
 .menu  li  a{
@@ -138,7 +138,7 @@ nav h1{
 }
 @media(max-width:1024px){
     .menu li{
-        font-size: 1.2rem;
+        font-size: 1rem;
         white-space: nowrap;
     }
     .menu li a{
