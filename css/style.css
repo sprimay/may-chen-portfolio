@@ -124,7 +124,8 @@ nav h1{
 .menu li{
     position: relative;
     margin:0 16px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Cormorant Garamond', 'Noto Sans TC', sans-serif;
 }
 .menu  li  a{
     color: #3A2922;
@@ -892,7 +893,7 @@ footer{
     justify-content: center;
 }
 .footer_menu li{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     padding: 16px 24px;
 }
 .footer_menu li a{
@@ -1041,12 +1042,22 @@ footer small{
 .back_to_portfolio a{
     display: block;
     background-color: #3A2922;
-    font-size: 1rem;
-    padding:8px 24px;
+    padding: 8px 24px;
     margin: 0 10px 0 10px;
     color: #DBD4CE;
     text-align: center;
     border-radius: 2px;
+}
+.back_to_portfolio a .btn-zh{
+    display: block;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 0.85rem;
+}
+.back_to_portfolio a .btn-en{
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.8rem;
+    opacity: 0.8;
 }
 .back_to_portfolio a:hover{
     background-color: #B19071;
@@ -1084,7 +1095,13 @@ footer small{
 }
 @media (max-width:540px){
     .back_to_portfolio{
-        width: 50%;
+        width: 60%;
+        flex-direction: column;
+        gap: 8px;
+        padding: 24px 0;
+    }
+    .back_to_portfolio a{
+        margin: 0;
     }
     .video-container img{
         width: 80%;
@@ -1100,6 +1117,6 @@ footer small{
         margin-bottom: 10%;
     }
     .Bcards_infowords h3{
-    font-size: 2rem;
+        font-size: 1.4rem;
     }
 }
