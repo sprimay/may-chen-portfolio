@@ -569,11 +569,16 @@ nav h1{
     padding:15px; 
 }
 .collection{
+    flex: 1;
     padding: 8px;
 }
 .collection img{
     border-radius: 8px;
     object-fit: cover;
+}
+.collection--placeholder{
+    visibility: hidden;
+    pointer-events: none;
 }
 .collection a:hover img{
     transform: scale(1.02);
@@ -595,10 +600,6 @@ nav h1{
         width: 50%;
         padding: 8px;
     }
-    .collection img{
-        height: 100%;
-        object-fit: cover;
-    }
 }
 @media (max-width:835px){
     #tab-menu > .tab-inner{
@@ -606,6 +607,23 @@ nav h1{
     }
 }
 @media (max-width:768px){
+    #tab-menu > ul{
+        position: static;
+        transform: none;
+        display: flex;
+        right: auto;
+        margin-bottom: 0;
+    }
+    #tab-menu > ul > li{
+        flex: 1;
+        display: block;
+        text-align: center;
+        height: auto;
+        font-size: 15px;
+        line-height: 1.4;
+        padding: 10px 8px;
+        margin: 0;
+    }
     #tab-menu > .tab-inner{
         height: auto;
     }
@@ -620,13 +638,24 @@ nav h1{
     }
 }
 @media (max-width:540px){
+    #tab-menu > ul{
+        position: static;
+        transform: none;
+        display: flex;
+        right: auto;
+        margin-bottom: 0;
+    }
     #tab-menu > ul > li{
+        flex: 1;
+        display: block;
+        text-align: center;
         height: auto;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.4;
-        padding: 8px;
+        padding: 10px 6px;
         border-radius: 4px 4px 0 0;
         color: #B19071;
+        margin: 0;
     }
     #tab-menu > .tab-inner{
         height: auto;
