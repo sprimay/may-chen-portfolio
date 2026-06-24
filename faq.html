@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>專案合作常見問題 (FAQ)</title>
+<style>
+  :root{
+    --bg:#EEE8E8;
+    --light:#B19071;
+    --dark:#3A2922;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--dark);
+    font-family:"Noto Serif TC","PingFang TC","Microsoft JhengHei",serif;
+    line-height:1.8;
+  }
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:60px 24px 100px;
+  }
+  header{
+    text-align:center;
+    margin-bottom:48px;
+  }
+  .eyebrow{
+    letter-spacing:0.3em;
+    font-size:13px;
+    color:var(--light);
+    text-transform:uppercase;
+    margin-bottom:12px;
+  }
+  h1{
+    font-size:30px;
+    font-weight:700;
+    margin:0;
+    color:var(--dark);
+    letter-spacing:0.05em;
+  }
+  .rule{
+    width:48px;
+    height:2px;
+    background:var(--light);
+    margin:20px auto 0;
+  }
+  .faq-list{
+    border-top:1px solid rgba(58,41,34,0.15);
+  }
+  .faq-item{
+    border-bottom:1px solid rgba(58,41,34,0.15);
+  }
+  .faq-q{
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:22px 4px;
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    font-family:inherit;
+  }
+  .q-num{
+    font-size:14px;
+    color:var(--light);
+    font-weight:600;
+    flex-shrink:0;
+    padding-top:2px;
+    letter-spacing:0.05em;
+  }
+  .q-text{
+    font-size:17px;
+    font-weight:700;
+    color:var(--dark);
+    flex:1;
+  }
+  .q-icon{
+    flex-shrink:0;
+    width:20px;
+    height:20px;
+    position:relative;
+    margin-top:3px;
+  }
+  .q-icon::before,
+  .q-icon::after{
+    content:"";
+    position:absolute;
+    background:var(--light);
+    transition:transform 0.3s ease, opacity 0.3s ease;
+  }
+  .q-icon::before{
+    width:14px;
+    height:2px;
+    top:9px;
+    left:3px;
+  }
+  .q-icon::after{
+    width:2px;
+    height:14px;
+    top:3px;
+    left:9px;
+  }
+  .faq-item.open .q-icon::after{
+    transform:rotate(90deg);
+    opacity:0;
+  }
+  .faq-a-wrap{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.35s ease;
+  }
+  .faq-item.open .faq-a-wrap{
+    max-height:2000px;
+  }
+  .faq-a{
+    padding:0 4px 26px 38px;
+    font-size:15px;
+    color:var(--dark);
+    opacity:0.9;
+  }
+  .faq-a p{
+    margin:0 0 12px;
+  }
+  .faq-a p:last-child{
+    margin-bottom:0;
+  }
+  .note{
+    color:var(--light);
+    font-size:13.5px;
+  }
+  .warn{
+    border-left:3px solid var(--light);
+    padding-left:14px;
+    margin-top:14px;
+  }
+  footer{
+    text-align:center;
+    margin-top:60px;
+    font-size:13px;
+    color:var(--light);
+    letter-spacing:0.1em;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Studio FAQ</div>
+    <h1>專案合作常見問題</h1>
+    <div class="rule"></div>
+  </header>
+
+  <div class="faq-list" id="faqList">
+
+    <div class="faq-item">
+      <button class="faq-q">
+        <span class="q-num">Q1</span>
+        <span class="q-text">請問可以如何付款？可以開發票嗎？</span>
+        <span class="q-icon"></span>
+      </button>
+      <div class="faq-a-wrap">
+        <div class="faq-a">
+          <p>目前工作室提供銀行轉帳。若為大企業或公關公司，亦可配合填寫勞務報酬單核銷。</p>
+          <p class="note">（註：目前為個人兼職接案，暫無提供開立發票的服務唷！）</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        <span class="q-num">Q2</span>
+        <span class="q-text">請問接案流程大概需要多久？可以接急件嗎？</span>
+        <span class="q-icon"></span>
+      </button>
+      <div class="faq-a-wrap">
+        <div class="faq-a">
+          <p><strong>1. 一般常規專案：</strong> 從付完訂金、資料提供齊全的隔日開始計算，初稿約需 3 個工作天（D+3）內提供。</p>
+          <p><strong>2. 大型／複雜專案：</strong> 若為繪製繁複、篇幅較大或需深度構思之大型案件，設計師將於「專案報價單」中，依據專案複雜度另外為您規劃與報價專屬的「預估完成時程表」。</p>
+          <p><strong>3. 急件加價規範：</strong> 若需低於上述常規時程（如當日交件）之「急件」需求，將視本人當下排程狀況決定是否接案，且將酌收 20%~30% 之急件趕工費用，建議提早預約諮詢唷！</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        <span class="q-num">Q3</span>
+        <span class="q-text">如果對初稿不滿意，可以修改幾次？可以退費嗎？</span>
+        <span class="q-icon"></span>
+      </button>
+      <div class="faq-a-wrap">
+        <div class="faq-a">
+          <p><strong>1. 一般專案修改：</strong> 專案報價預設皆包含 3 次的免費細節微調。在初稿階段若方向不符，可進行大方向調整。</p>
+          <p><strong>2. 特約專案規範：</strong> 部分需深度溝通之複雜專案，其「修改次數之起算時間點」與「修改規範」，將直接以該次「專案報價單內之特約備註」為主。</p>
+          <div class="warn">
+            <p>⚠️ 特別注意：</p>
+            <p>免費修改次數僅限於「設計視覺調整」。若已進入中後期定稿階段，欲大幅度更換視覺風格，或因貴司內部原因「頻繁調整／抽換已確認之文字內容」，將視修改範圍，每次酌收 NT$200 元起之改稿排版費。</p>
+            <p>因設計已付出實際勞務與時間，專案啟動後恕不接受全額退費，敬請見諒。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        <span class="q-num">Q4</span>
+        <span class="q-text">結案後會提供檔案的原檔嗎（AI／PSD）？</span>
+        <span class="q-icon"></span>
+      </button>
+      <div class="faq-a-wrap">
+        <div class="faq-a">
+          <p>報價內預設提供完整的高解析度印刷檔（PDF）或網路發布檔（JPG/PNG）。</p>
+          <div class="warn">
+            <p>⚠️ 原檔買斷說明：</p>
+            <p>若因貴司後續延伸應用，需索取可編輯之設計原檔（AI/PSD），將視專案複雜度與商業授權範圍，於個別「專案報價單」中另行列出原檔買斷費用。</p>
+            <p>如有原檔需求，請務必於諮詢階段提早提出，以便為您精準報價唷！</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        <span class="q-num">Q5</span>
+        <span class="q-text">請問專案有溝通與驗收的時間限制嗎？</span>
+        <span class="q-icon"></span>
+      </button>
+      <div class="faq-a-wrap">
+        <div class="faq-a">
+          <p>為確保專案時程順利推進與維護雙方權益，設有以下進度規範：</p>
+          <p><strong>防進度蒸發：</strong> 階段性任務（如初稿、校對）交付後，若客戶於一個月內未回覆或未主動協商延期，本專案將自動進入「暫停冷凍狀態」並釋出排程。日後若欲重新啟動專案，需視本人當下排程而定，且客戶需額外支付專案總金額 10% 的「重啟排程費」，方可繼續進行修改與定稿。</p>
+          <p><strong>驗收：</strong> 最終成品交付後，請於 7 天內於 LINE 對話框內回覆「確認無誤」或提出最終修改需求。逾期未回覆者，將視同「自動完成專案驗收」，本工作室將依約收取專案尾款，並於收到尾款後提供正式的高解析度檔案。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">
+        <span class="q-num">Q6</span>
+        <span class="q-text">報價單具有法律效力嗎？</span>
+        <span class="q-icon"></span>
+      </button>
+      <div class="faq-a-wrap">
+        <div class="faq-a">
+          <p>本工作室之報價單經雙方以 Email 或 LINE 對話確認作為認可的形式後，其內容等同於正本元件，視為正式合約書，雙方權益皆受法律保障。</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>專案合作・歡迎諮詢</footer>
+</div>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var item = btn.closest('.faq-item');
+    item.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>
