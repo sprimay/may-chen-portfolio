@@ -25,7 +25,91 @@
   }
   header{
     text-align:center;
+    margin-bottom:36px;
+  }
+  .tabs{
+    display:flex;
+    justify-content:center;
+    gap:0;
     margin-bottom:48px;
+    border-bottom:1px solid rgba(58,41,34,0.15);
+  }
+  .tab-btn{
+    font-family:inherit;
+    background:none;
+    border:none;
+    color:var(--light);
+    padding:12px 28px;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:0.08em;
+    cursor:pointer;
+    position:relative;
+    transition:color 0.25s ease;
+  }
+  .tab-btn::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:-1px;
+    height:2px;
+    background:var(--dark);
+    transform:scaleX(0);
+    transition:transform 0.25s ease;
+  }
+  .tab-btn.active{
+    color:var(--dark);
+  }
+  .tab-btn.active::after{
+    transform:scaleX(1);
+  }
+  .tab-btn:hover{
+    color:var(--dark);
+  }
+  .tab-panel{
+    display:none;
+  }
+  .tab-panel.active{
+    display:block;
+  }
+  .flow-list{
+    border-top:1px solid rgba(58,41,34,0.15);
+  }
+  .flow-item{
+    display:flex;
+    gap:20px;
+    padding:26px 4px;
+    border-bottom:1px solid rgba(58,41,34,0.15);
+  }
+  .flow-step{
+    flex-shrink:0;
+    width:54px;
+    font-size:13px;
+    font-weight:700;
+    color:var(--light);
+    letter-spacing:0.05em;
+    padding-top:2px;
+  }
+  .flow-step .num{
+    display:block;
+    font-size:26px;
+    color:var(--dark);
+    font-weight:700;
+    line-height:1.1;
+    margin-top:2px;
+  }
+  .flow-body h3{
+    margin:0 0 8px;
+    font-size:16.5px;
+    color:var(--dark);
+    font-weight:700;
+  }
+  .flow-body p{
+    margin:0;
+    font-size:15px;
+    color:var(--dark);
+    opacity:0.9;
   }
   .eyebrow{
     letter-spacing:0.3em;
@@ -150,11 +234,17 @@
 <body>
 <div class="wrap">
   <header>
-    <div class="eyebrow">Studio FAQ</div>
-    <h1>專案合作常見問題</h1>
+    <div class="eyebrow">Studio Guide</div>
+    <h1 id="pageTitle">設計合作流程</h1>
     <div class="rule"></div>
   </header>
 
+  <div class="tabs">
+    <button class="tab-btn" data-tab="flow">合作流程</button>
+    <button class="tab-btn" data-tab="faq">常見問題 FAQ</button>
+  </div>
+
+  <div class="tab-panel" id="panel-faq">
   <div class="faq-list" id="faqList">
 
     <div class="faq-item">
@@ -252,16 +342,95 @@
     </div>
 
   </div>
+  </div>
+
+  <div class="tab-panel active" id="panel-flow">
+  <div class="flow-list">
+
+    <div class="flow-item">
+      <div class="flow-step">STEP<span class="num">1</span></div>
+      <div class="flow-body">
+        <h3>需求填寫與初步洽談</h3>
+        <p>請先填寫詢價表單，或在此留下您的設計需求（項目、數量、期望風格、參考資料）。收到需求後，我將與您詳細討論細節，並為您評估最適合的設計方案。</p>
+      </div>
+    </div>
+
+    <div class="flow-item">
+      <div class="flow-step">STEP<span class="num">2</span></div>
+      <div class="flow-body">
+        <h3>報價與時程評估</h3>
+        <p>確認需求後，我將提供正式報價單、預計交件時間與修改規則。</p>
+      </div>
+    </div>
+
+    <div class="flow-item">
+      <div class="flow-step">STEP<span class="num">3</span></div>
+      <div class="flow-body">
+        <h3>簽約與款項支付</h3>
+        <p>雙方確認報價無誤後，個人／中小企業專案需預付 30% 訂金（可透過個人銀行轉帳）後正式排程動工。若為大公司或公關發案，可配合貴司簽訂勞務合約與填寫勞務報酬單，並依雙方約定之款項時程進行。</p>
+      </div>
+    </div>
+
+    <div class="flow-item">
+      <div class="flow-step">STEP<span class="num">4</span></div>
+      <div class="flow-body">
+        <h3>初稿提案與調整修正</h3>
+        <p>依約定時間提供初稿。定稿前提供 3 次免費細節微調（超過次數或與設計無關之修改將酌收修改費）。</p>
+      </div>
+    </div>
+
+    <div class="flow-item">
+      <div class="flow-step">STEP<span class="num">5</span></div>
+      <div class="flow-body">
+        <h3>尾款交付與結案交件</h3>
+        <p>設計確認定稿後，請支付剩餘 70% 尾款。確認收到款項後，我將交付最終印刷向量檔（AI）或高解析度電子檔（JPG/PNG）。</p>
+      </div>
+    </div>
+
+  </div>
+  </div>
 
   <footer>專案合作・歡迎諮詢</footer>
 </div>
 
 <script>
+var titles = { faq: '專案合作常見問題', flow: '設計合作流程' };
+
+function activateTab(tab, updateHash){
+  if(!titles[tab]) tab = 'flow';
+  document.querySelectorAll('.tab-btn').forEach(function(b){
+    b.classList.toggle('active', b.getAttribute('data-tab') === tab);
+  });
+  document.querySelectorAll('.tab-panel').forEach(function(p){
+    p.classList.toggle('active', p.id === 'panel-' + tab);
+  });
+  document.getElementById('pageTitle').textContent = titles[tab];
+  if(updateHash){
+    history.replaceState(null, '', '#' + tab);
+  }
+}
+
+document.querySelectorAll('.tab-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    activateTab(btn.getAttribute('data-tab'), true);
+  });
+});
+
 document.querySelectorAll('.faq-q').forEach(function(btn){
   btn.addEventListener('click', function(){
     var item = btn.closest('.faq-item');
     item.classList.toggle('open');
   });
+});
+
+// 依網址錨點 (#flow 或 #faq) 開啟對應分頁
+window.addEventListener('DOMContentLoaded', function(){
+  var hash = window.location.hash.replace('#', '');
+  activateTab(hash || 'flow', false);
+});
+window.addEventListener('hashchange', function(){
+  var hash = window.location.hash.replace('#', '');
+  activateTab(hash || 'flow', false);
 });
 </script>
 </body>
