@@ -901,6 +901,14 @@ nav h1{
     color: #DBD4CE;
     border-radius: 1rem;
 }
+.line_link{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.line_link:hover{
+    color: #B19071;
+}
 .contact_info ul img{
     display: inline-block;
     width: 20%;
@@ -1031,16 +1039,19 @@ footer small{
 /* brand card */
 .brand_cards{
     display: flex;
-    align-items: center;
-    justify-content:center;
-    width: 85%;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 16px;
+    width: 88%;
     margin: 0 auto;
     padding: 5% 0 5% 0;
 }
 .Bcards{
     position: relative;
-    flex: 1;
-    margin:0 12px;
+    flex: 1 1 calc(18% - 16px);
+    min-width: 140px;
+    aspect-ratio: 3 / 4;
     border-radius: 20px;
     overflow: hidden;
     transition: all 0.5s;
@@ -1073,11 +1084,22 @@ footer small{
     text-align: center;
     line-height: 25px;
 }
+.Bcards a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.Bcards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 .bCover img{
     object-fit: cover;
 }
 .Bcards_infowords h3{
-    font-size: 2rem;
+    font-size: clamp(0.85rem, 1.5vw, 2rem);
     color: #ffffff;
     text-shadow: 0 0 10px rgb(82, 82, 82);
 }
@@ -1147,7 +1169,13 @@ footer small{
 }
 @media (max-width:768px){
     .back_to_portfolio{
-        width: 30%;
+        width: 50%;
+        flex-direction: column;
+        gap: 8px;
+        padding: 24px 0;
+    }
+    .back_to_portfolio a{
+        margin: 0;
     }
     .video-container{
         flex-direction: column-reverse;
@@ -1161,8 +1189,15 @@ footer small{
      .astroVideo{
         width: 100%;
     }
+    .brand_cards{
+        gap: 12px;
+        width: 92%;
+    }
+    .Bcards{
+        flex: 1 1 calc(44% - 12px);
+    }
     .Bcards_infowords h3{
-    font-size: 1rem;
+        font-size: clamp(0.85rem, 2.5vw, 1.2rem);
     }
 }
 @media (max-width:540px){
@@ -1183,12 +1218,13 @@ footer small{
         width: 100%;
     }
     .brand_cards{
-       flex-direction: column; 
+        gap: 10px;
+        width: 94%;
     }
     .Bcards{
-        margin-bottom: 10%;
+        flex: 1 1 calc(44% - 10px);
     }
     .Bcards_infowords h3{
-        font-size: 1.4rem;
+        font-size: clamp(0.75rem, 3vw, 1rem);
     }
 }
